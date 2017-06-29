@@ -1,17 +1,18 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <modelVersion>4.0.0</modelVersion>
-  <groupId>com.rest</groupId>
-  <artifactId>SPTest</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
-  <packaging>war</packaging>
-  
-  
-  	<properties>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.rest</groupId>
+	<artifactId>SPTest</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<packaging>war</packaging>
+
+
+	<properties>
 		<jdk.version>1.8</jdk.version>
 		<spring.version>4.3.0.RELEASE</spring.version>
 		<jstl.version>1.2</jstl.version>
 		<servletapi.version>3.1.0</servletapi.version>
-		<spring.jdbc>4.3.0.RELEASE</spring.jdbc>
+		<!--  <spring.jdbc>4.3.0.RELEASE</spring.jdbc>-->
 	</properties>
 
 	<dependencies>
@@ -34,17 +35,21 @@
 			<version>${servletapi.version}</version>
 			<scope>provided</scope>
 		</dependency>
+		<!-- <dependency> <groupId>org.springframework</groupId> <artifactId>spring-jdbc</artifactId> 
+			<version>${spring.jdbc}</version> </dependency> -->
 
+		<!-- https://mvnrepository.com/artifact/org.springframework/spring-jdbc -->
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-jdbc</artifactId>
-			<version>${spring.jdbc}</version>
+			<version>4.3.8.RELEASE</version>
 		</dependency>
+
 
 	</dependencies>
 
-  <build>
-    <plugins>
+	<build>
+		<plugins>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-war-plugin</artifactId>
@@ -55,9 +60,9 @@
 				</configuration>
 			</plugin>
 		</plugins>
-  </build>
+	</build>
 
-  
-  
-  
+
+
+
 </project>

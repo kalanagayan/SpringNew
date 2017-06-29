@@ -14,6 +14,6 @@ public interface CustomerDao {
 	
 	public void updateCustomer(Customer customer);
 	
-	public void findCustomerById(int id);
+	public Customer findCustomerById(int id);
 	
 }
